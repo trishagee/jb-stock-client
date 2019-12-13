@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.mechanitis.demo.stockui.ChartController">
+    <LineChart prefHeight="600" fx:id="chart">
+        <xAxis>
+            <CategoryAxis label="Time"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis label="Price"/>
+        </yAxis>
+    </LineChart>
+</VBox>
