@@ -16,6 +16,7 @@
 
     <properties>
         <java.version>11</java.version>
+        <javafx.version>13.0.1</javafx.version>
     </properties>
 
     <dependencies>
@@ -38,12 +39,12 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-graphics</artifactId>
-            <version>13</version>
+            <version>${javafx.version}</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>13</version>
+            <version>${javafx.version}</version>
         </dependency>
         <dependency>
             <groupId>com.mechanitis</groupId>
