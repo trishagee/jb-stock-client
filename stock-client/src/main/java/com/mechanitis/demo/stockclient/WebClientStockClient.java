@@ -7,6 +7,9 @@ import reactor.core.publisher.Flux;
 import java.io.IOException;
 import java.time.Duration;
 
+import static java.time.Duration.ofSeconds;
+import static reactor.util.retry.Retry.backoff;
+
 @Log4j2
 public class WebClientStockClient implements StockClient {
     private WebClient webClient;
@@ -22,7 +25,7 @@ public class WebClientStockClient implements StockClient {
                         .uri("http://localhost:8080/stocks/{symbol}", symbol)
                         .retrieve()
                         .bodyToFlux(StockPrice.class)
-                        .retryBackoff(5, Duration.ofSeconds(1), Duration.ofSeconds(20))
+                        .retryWhen(backoff(5, ofSeconds(1)).maxBackoff(ofSeconds(20)))
                         .doOnError(IOException.class, e -> log.error(e.getMessage()));
     }
 }
