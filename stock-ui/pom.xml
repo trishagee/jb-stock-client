@@ -16,7 +16,7 @@
 
     <properties>
         <java.version>11</java.version>
-        <javafx.version>13.0.1</javafx.version>
+        <javafx.version>15.0.1</javafx.version>
     </properties>
 
     <dependencies>
@@ -59,6 +59,14 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.5</version>
+                <configuration>
+                    <mainClass>com.mechanitis.demo.stockui.StockUiApplication</mainClass>
+                </configuration>
             </plugin>
         </plugins>
     </build>
