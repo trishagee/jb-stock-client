@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.XYChart.Data;
 import javafx.scene.chart.XYChart.Series;
+import net.rgielen.fxweaver.core.FxmlView;
 import org.springframework.stereotype.Component;
 
 import java.util.function.Consumer;
@@ -16,10 +17,11 @@ import static java.lang.String.valueOf;
 import static javafx.collections.FXCollections.observableArrayList;
 
 @Component
+@FxmlView("/chart.fxml")
 public class ChartController {
 
     @FXML
-    public LineChart<String, Double> chart;
+    private LineChart<String, Double> chart;
     private StockClient stockClient;
 
     public ChartController(StockClient stockClient) {
@@ -35,7 +37,6 @@ public class ChartController {
         data.add(priceSubscriber1.getSeries());
         data.add(priceSubscriber2.getSeries());
         chart.setData(data);
-
     }
 
     private static class PriceSubscriber implements Consumer<StockPrice> {

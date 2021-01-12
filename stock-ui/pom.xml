@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.mechanitis</groupId>
     <artifactId>stock-ui</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.4-SNAPSHOT</version>
     <name>stock-ui</name>
     <description>JavaFX front-end for the stock prices application</description>
 
@@ -20,6 +20,11 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>net.rgielen</groupId>
+            <artifactId>javafx-weaver-spring-boot-starter</artifactId>
+            <version>1.3.0</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
