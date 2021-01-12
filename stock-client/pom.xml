@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.mechanitis</groupId>
 	<artifactId>stock-client</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<name>stock-client</name>
 	<description>Client code to connect to the stock service</description>
 
