@@ -15,7 +15,7 @@
 	<description>Client code to connect to the stock service</description>
 
 	<properties>
-		<java.version>11</java.version>
+		<java.version>15</java.version>
 		<spring-boot.repackage.skip>true</spring-boot.repackage.skip>
 	</properties>
 
