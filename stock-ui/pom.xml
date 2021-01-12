@@ -15,7 +15,7 @@
     <description>JavaFX front-end for the stock prices application</description>
 
     <properties>
-        <java.version>11</java.version>
+        <java.version>15</java.version>
         <javafx.version>15.0.1</javafx.version>
     </properties>
 

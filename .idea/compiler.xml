@@ -12,7 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="stock-client" target="15" />
-      <module name="stock-ui" target="11" />
+      <module name="stock-ui" target="15" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
