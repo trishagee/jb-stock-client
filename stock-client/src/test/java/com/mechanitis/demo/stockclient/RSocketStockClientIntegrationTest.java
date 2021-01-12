@@ -1,6 +1,5 @@
 package com.mechanitis.demo.stockclient;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,7 +14,7 @@ class RSocketStockClientIntegrationTest {
     private RSocketRequester.Builder builder;
 
     private RSocketRequester createRSocketRequester() {
-        return builder.connectTcp("localhost", 7000).block();
+        return builder.tcp("localhost", 7000);
     }
 
     @Test
