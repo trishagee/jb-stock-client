@@ -13,9 +13,9 @@ import static reactor.util.retry.Retry.backoff;
 
 @Log4j2
 public class RSocketStockClient implements StockClient {
-    private RSocketRequester rSocketRequester;
+    private final RSocketRequester rSocketRequester;
 
-    public RSocketStockClient(RSocketRequester rSocketRequester) {
+    RSocketStockClient(RSocketRequester rSocketRequester) {
         this.rSocketRequester = rSocketRequester;
     }
 
