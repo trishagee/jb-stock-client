@@ -1,0 +1,5 @@
+<gradleEnterprise>
+    <server>
+        <url>https://events.gradle.com/</url>
+    </server>
+</gradleEnterprise>
