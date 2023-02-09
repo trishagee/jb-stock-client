@@ -5,18 +5,18 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.4.1</version>
+        <version>3.0.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.mechanitis</groupId>
     <artifactId>stock-ui</artifactId>
-    <version>0.0.4-SNAPSHOT</version>
+    <version>0.0.5-SNAPSHOT</version>
     <name>stock-ui</name>
     <description>JavaFX front-end for the stock prices application</description>
 
     <properties>
-        <java.version>15</java.version>
-        <javafx.version>15.0.1</javafx.version>
+        <java.version>17</java.version>
+        <javafx.version>17.0.1</javafx.version>
     </properties>
 
     <dependencies>
@@ -48,7 +48,7 @@
         <dependency>
             <groupId>com.mechanitis</groupId>
             <artifactId>stock-client</artifactId>
-            <version>0.0.3-SNAPSHOT</version>
+            <version>0.0.4-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>

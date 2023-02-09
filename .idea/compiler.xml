@@ -12,8 +12,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="stock-client" target="15" />
-      <module name="stock-ui" target="15" />
+      <module name="stock-client" target="17" />
+      <module name="stock-ui" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

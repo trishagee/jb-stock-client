@@ -5,17 +5,17 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.4.1</version>
+		<version>3.0.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mechanitis</groupId>
 	<artifactId>stock-client</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<name>stock-client</name>
 	<description>Client code to connect to the stock service</description>
 
 	<properties>
-		<java.version>15</java.version>
+		<java.version>17</java.version>
 		<spring-boot.repackage.skip>true</spring-boot.repackage.skip>
 	</properties>
 
